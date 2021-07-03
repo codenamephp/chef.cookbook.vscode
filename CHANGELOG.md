@@ -2,7 +2,7 @@
 
 ## [Unreleased](https://github.com/codenamephp/chef.cookbook.vscode/tree/HEAD)
 
-[Full Changelog](https://github.com/codenamephp/chef.cookbook.vscode/compare/0e7b735600ee2096dcec895ade9b5cb163ecc32e...HEAD)
+[Full Changelog](https://github.com/codenamephp/chef.cookbook.vscode/compare/1.0.0...HEAD)
 
 **Implemented enhancements:**
 
@@ -11,6 +11,10 @@
 **Fixed bugs:**
 
 - Install additional package dependencies [\#1](https://github.com/codenamephp/chef.cookbook.vscode/pull/1) ([bastianschwarz](https://github.com/bastianschwarz))
+
+## [1.0.0](https://github.com/codenamephp/chef.cookbook.vscode/tree/1.0.0) (2021-07-03)
+
+[Full Changelog](https://github.com/codenamephp/chef.cookbook.vscode/compare/0e7b735600ee2096dcec895ade9b5cb163ecc32e...1.0.0)
 
 
 
