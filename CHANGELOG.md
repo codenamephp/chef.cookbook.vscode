@@ -1,8 +1,8 @@
 # Changelog
 
-## [Unreleased](https://github.com/codenamephp/chef.cookbook.vscode/tree/HEAD)
+## [0.1.0](https://github.com/codenamephp/chef.cookbook.vscode/tree/0.1.0) (2021-07-03)
 
-[Full Changelog](https://github.com/codenamephp/chef.cookbook.vscode/compare/0e7b735600ee2096dcec895ade9b5cb163ecc32e...HEAD)
+[Full Changelog](https://github.com/codenamephp/chef.cookbook.vscode/compare/0e7b735600ee2096dcec895ade9b5cb163ecc32e...0.1.0)
 
 **Implemented enhancements:**
 
