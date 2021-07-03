@@ -76,3 +76,48 @@ codenamephp_vscode_package 'Install vscode' do
   package_name 'code-insiders'
 end
 ```
+
+### Extension
+Manages the installation of extensions for users. Each call can install a single extension for a single user.
+
+#### Actions
+- `install`: Installs the extension for the user. If the extension is already installed nothing happens
+- `install_or_update`: Installs the extension for the given user or udpates it if the extension is already installed
+- `uninstall`: Unsinstalls the extension for the user.
+
+#### Properties
+- `extension_name`: The extension to install, usually in the form 'vendor.extension', defaults to the resource name
+- `user`: The user(name) to install the extension for
+- `home_dir (optional)`: The home dir of the user. If not set it the resource tries to find it using the user
+
+#### Examples
+```ruby
+# Minimal config
+codenamephp_vscode_extension 'eamodio.gitlens' do
+  user 'user1'
+end
+
+# With explicit extension_name
+codenamephp_vscode_extension 'Install gitlens' do
+  extension_name 'eamodio.gitlens'
+  user 'user1'
+end
+
+# With explicit home_dir
+codenamephp_vscode_extension 'eamodio.gitlens' do
+  user 'user1'
+  home '/var/home/user1'
+end
+
+# Install or Update
+codenamephp_vscode_extension 'eamodio.gitlens' do
+  user 'user1'
+  action :install_or_update
+end
+
+# Uninstall
+codenamephp_vscode_extension 'eamodio.gitlens' do
+  user 'user1'
+  action :uninstall
+end
+```
