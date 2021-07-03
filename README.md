@@ -121,3 +121,35 @@ codenamephp_vscode_extension 'eamodio.gitlens' do
   action :uninstall
 end
 ```
+
+### Extensions
+This resources installs multiple extensions for multiple users and expects as hash with the user as key and an array of extensions as value.
+It uses `codenamephp_vscode_extension` internally
+
+#### Actions
+- `:install`: Installs the given extensions for the given users. If an extension is already installed no action is performed
+- `:install_or_update`: Installs the given extensions for the given users or updates it if it's already installed
+- `:uninstall`: removes the given extensions for the given users
+
+#### Properties
+- `users_extensions`: Hash with the users as keys and an array of extension names as strings as values that will be uninstalled
+
+#### Examples
+```ruby
+# Minmal parameters
+codenamephp_vscode_extensions 'Install extensions' do
+  users_extensions 'user1' => %w[ext1 ext2], 'user2' => %w[ext2, ext3]
+end
+
+# Install or update
+codenamephp_vscode_extensions 'Uninstall extensions' do
+  action :install_or_update
+  users_extensions 'user1' => %w[ext1 ext2], 'user2' => %w[ext2, ext3]
+end
+
+# Uninstall
+codenamephp_vscode_extensions 'Uninstall extensions' do
+  action :uninstall
+  users_extensions 'user1' => %w[ext1 ext2], 'user2' => %w[ext2, ext3]
+end
+```
