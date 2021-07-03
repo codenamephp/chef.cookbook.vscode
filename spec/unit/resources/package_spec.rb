@@ -11,6 +11,7 @@ describe 'codenamephp_vscode_package' do
     end
 
     it {
+      is_expected.to install_package(%w(libxshmfence1 libx11-xcb1 libasound2 libgbm1 libxcb-dri3-0))
       is_expected.to install_package('code')
     }
   end
