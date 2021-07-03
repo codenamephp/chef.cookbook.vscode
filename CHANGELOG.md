@@ -1,8 +1,8 @@
 # Changelog
 
-## [0.1.0](https://github.com/codenamephp/chef.cookbook.vscode/tree/0.1.0) (2021-07-03)
+## [1.0.0](https://github.com/codenamephp/chef.cookbook.vscode/tree/1.0.0) (2021-07-03)
 
-[Full Changelog](https://github.com/codenamephp/chef.cookbook.vscode/compare/0e7b735600ee2096dcec895ade9b5cb163ecc32e...0.1.0)
+[Full Changelog](https://github.com/codenamephp/chef.cookbook.vscode/compare/0e7b735600ee2096dcec895ade9b5cb163ecc32e...1.0.0)
 
 **Implemented enhancements:**
 
@@ -11,6 +11,10 @@
 **Fixed bugs:**
 
 - Install additional package dependencies [\#1](https://github.com/codenamephp/chef.cookbook.vscode/pull/1) ([bastianschwarz](https://github.com/bastianschwarz))
+
+**Merged pull requests:**
+
+- Random change so I can crate a pull request with breaking change so version will be set to 1.0.0 [\#3](https://github.com/codenamephp/chef.cookbook.vscode/pull/3) ([bastianschwarz](https://github.com/bastianschwarz))
 
 
 
